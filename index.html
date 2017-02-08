@@ -54,9 +54,24 @@
               var item = {
                 "name": "Stiletto Heels",
                 "price": 50.50,
-                "description": "Slim and sleek, high class stilettos heels. These shoes are perfect for a night out on the town or with a special someone. WARNING: Do not purchase if you have an medical conditions of the ankle.",
+                "description": "Slim and sleek, high class stiletto heels. These shoes are perfect for a night out on the town or with a special someone. WARNING: Do not purchase if you have an medical conditions of the ankle.",
                 "imageTitle": "stiletto-heels.jpg"
               }
+              
+              function print(name, description, price) {
+                if (name == "") {
+                  console.log(ERROR-name);
+                } else if (description == "") {
+                  console.log(ERROR-descrition);
+                } else if (price < 0) {
+                  console.log(ERROR-price);
+                } else {
+                  console.log(name + ":" + description + " This product is $" + price +  ".")
+                }
+              }
+              
+              print (item.name, item.description, item.price);
+              
             </script>
           </li>
         </ul>
