@@ -48,3 +48,18 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+/* This function does not work as an array, it keeps reading as undefined. Why is this?
+function print(name, description, price) {
+  if (name == "") {
+    console.log(ERROR-name);
+    } else if (description == "") {
+      console.log(ERROR-descrition);
+    } else if (price < 0) {
+      console.log(ERROR-price);
+    } else {
+      console.log(name + ":" + description + "This product is $" + price + ".")
+    }
+}
+              
+print(products.name, products.description, products.price);
