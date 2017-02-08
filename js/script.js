@@ -49,7 +49,7 @@ var products = [
   }
 ]
 
-/* This function does not work as an array, it keeps reading as undefined. Why is this?
+// This function does not work as an array, it keeps reading as undefined. Why is this?
 function print(name, description, price) {
   if (name == "") {
     console.log(ERROR-name);
