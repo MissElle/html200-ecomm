@@ -182,7 +182,6 @@ font-family: 'Chewy', cursive; */
   color: white;
   background-color: rgb(19, 47, 91);
   box-shadow: .2rem .2rem .2rem .2rem rgba(19, 47, 91,1);
-  border-radius: 3%; 
   display: flex;
   align-content: center;
   justify-content: center;
@@ -215,6 +214,7 @@ input[type=submit] {font-family: 'Indie Flower';}
 
 h2 {
   font-family: 'Chewy';
+  color: rgb(19, 47, 91);
 }
 
 h3 {font-family: 'Sanchez';}
