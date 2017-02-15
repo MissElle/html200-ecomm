@@ -64,3 +64,5 @@ Extra Challenge: Code a popup that toggles visibility when user clicks on cart i
 
 ## Grading
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
+
+git push https://github.com/MissElle/html200-ecomm
