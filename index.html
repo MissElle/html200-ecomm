@@ -13,47 +13,59 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
-      </ul>
-    </nav>
-
-    <h1>Winter Wear Warehouse</h1>
-  </header>
-
-  <aside>
-    <form>
-      <label>Filter By:
-        <select name="filter">
-          <option value="">Choose One</option>
-          <option value="price">Price</option>
-          <option value="name">Name</option>
-        </select>
-      </label>
-
-      <input type="submit" value="Sort">
-    </form>
-  </aside>
-
-  <section>
-    <h2>Scarves</h2>
-
-    <div class="item-container">
-
-      <div class="item">
-        <h3>Reversible Plaid</h3>
-        <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
-        <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
-        <p>26.99</p>
+  <div class="row">
+    <header>
+      <div class="col menu">
+        <nav>
+          <ul>
+            <li><a href="#">Hats</a></li>
+            <li><a href="#">Gloves</a></li>
+            <li><a href="#">Scarves</a></li>
+            <li class="cart-info">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </nav>
       </div>
+      
+      <div class="title">
+        <h1>Winter Wear Warehouse</h1>
+      </div>
+    </header>
 
+    <div class="col search">
+      <aside>
+        <form>
+          <label>Filter By:
+            <select name="filter">
+              <option value="">Choose One</option>
+              <option value="price">Price</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+
+          <input type="submit" value="Sort">
+        </form>
+      </aside>
+    </div>
+  </div>
+  
+  <section>
+    <div class="row">
+      <div class="page">
+        <h2>Scarves</h2>
+      </div>
+      
+      <div class="item-container">
+
+        <div class="item">
+          <h3>Reversible Plaid</h3>
+          <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
+          <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+          <p>26.99</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
