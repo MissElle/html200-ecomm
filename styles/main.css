@@ -34,19 +34,30 @@ div.row:after {
 
 .col {float: right; padding: .7rem;}
 
-.menu {width: 30%;}
+.menu {width: 30%; font-size: 150%;}
 ul {
   display: flex;
   justify-content: space-between;
 }
 
-.search {width: 30%;}
-.page {width: 100%;}
+.search {
+  width: 30%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  padding: 0 2.2rem .5rem 2.2rem;
+  font-size: 2rem;
+  }
+}
 .item-container {width: 100%;}
 
 /*These are the grid stylings for half-screen */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
 
 .title {
   float: left; 
@@ -57,14 +68,25 @@ ul {
   
 .col {float: right; padding: .5rem;}
   
-.menu {width: 40%;}
+.menu {width: 40%; font-size: 150%;}
 ul {
   display: flex;
   justify-content: space-between;
 }
   
-.search {width: 40%;}
-.page {width: 100%;}
+.search {
+  width: 40%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  }
+  
+.page {
+  width: 100%;
+  padding: .8rem 2.2rem .5rem 2.2rem;
+  font-size: 2rem;
+  }
+  
 .item-container {width: 100%;}
 
 }
@@ -82,15 +104,27 @@ ul {
   
 .col {float: right; padding: .2rem;}
   
-.menu {width: 20%;}
+.menu {width: 20%; font-size: 120%}
 ul {
+  text-align: right;
   display: flex;
   flex-flow: column wrap;
-  align-content: space-between;
+  align-content: flex-end;
 }
   
-.search {width: 100%;}
-.page {width: 100%;}
+.search {
+  width: 100%;
+  padding: 1rem .5rem 0 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  }
+  
+.page {
+  width: 100%;
+  padding: .5rem 2.2rem .5rem .5rem;
+  font-size: 2rem;
+  }
 .item-container {width: 100%;}
 }
 
@@ -158,8 +192,22 @@ font-family: 'Chewy', cursive; */
   font-family: 'Indie Flower';
 }
 
+li a {
+  text-decoration: none;
+  background-color: rgb(186, 212, 255);
+  box-shadow: .12rem .12rem .12rem .12rem rgba(186, 212, 255, 1);
+  border-radius: 3%; 
+}
 
-form {font-family: 'Indie Flower';}
+li {
+  font-weight: bold;
+  color: rgb(19, 47, 91);
+  padding: .2rem;
+}
+
+form {
+  font-family: 'Indie Flower';
+}
 
 select {font-family: 'Indie Flower';}
 
