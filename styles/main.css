@@ -25,39 +25,70 @@ div.row:after {
 
 /*These are the stylings for desktop */
 
-.title {float: left; width:70%;}
+.title {
+  float: left; 
+  width:70%;
+  font-size: 270%;
+  padding: 1rem .5em 1rem .5rem;
+}
 
-.col {float: right; padding: .5rem;}
+.col {float: right; padding: .7rem;}
 
 .menu {width: 30%;}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 .search {width: 30%;}
 .page {width: 100%;}
 .item-container {width: 100%;}
 
 /*These are the grid stylings for half-screen */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
-.title {float: left; width: 50%;}
+.title {
+  float: left; 
+  width: 60%;
+  font-size: 270%;
+  padding: 1rem .5em 1rem .5rem;
+  }
   
 .col {float: right; padding: .5rem;}
   
-.menu {width: 50%;}
-.search {width: 50%;}
+.menu {width: 40%;}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.search {width: 40%;}
 .page {width: 100%;}
 .item-container {width: 100%;}
-  
+
 }
 
 /*These are the stylings for devices */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 527px) {
 
-.title {float: left; width: 90%;}
+.title {
+  float: left; 
+  width: 80%;
+  font-size: 250%;
+  padding: 1rem .5em 1rem .5rem;
+  }
   
 .col {float: right; padding: .2rem;}
   
-.menu {width: 10%;}
+.menu {width: 20%;}
+ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+}
+  
 .search {width: 100%;}
 .page {width: 100%;}
 .item-container {width: 100%;}
@@ -106,7 +137,38 @@ div.row:after {
 
 /* This area is for css styling */
 
+/* Google Font families
 font-family: 'Permanent Marker', cursive;
 font-family: 'Indie Flower', cursive;
 font-family: 'Sanchez', serif;
-font-family: 'Chewy', cursive;
+font-family: 'Chewy', cursive; */
+
+.title {
+  font-family: 'Permanent Marker';
+  color: white;
+  background-color: rgb(19, 47, 91);
+  box-shadow: .2rem .2rem .2rem .2rem rgba(19, 47, 91,1);
+  border-radius: 3%; 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.menu {
+  font-family: 'Indie Flower';
+}
+
+
+form {font-family: 'Indie Flower';}
+
+select {font-family: 'Indie Flower';}
+
+input[type=submit] {font-family: 'Indie Flower';}
+
+h2 {
+  font-family: 'Chewy';
+}
+
+h3 {font-family: 'Sanchez';}
+
+p {font-family: 'Sanchez';}
