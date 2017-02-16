@@ -66,6 +66,7 @@ var products = [
 
 // Begin function for the form
 
-function sort (){
- console.log("testing one, two..."); 
+function sortProduct(){ 
+  console.log("function works");
+  event.preventDefault();
 }
