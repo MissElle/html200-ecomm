@@ -67,6 +67,6 @@ var products = [
 // Begin function for the form
 
 function sortProduct(){ 
-  console.log("function works");
+ console.log(document.product.filter.value);
   event.preventDefault();
 }
