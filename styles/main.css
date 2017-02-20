@@ -49,7 +49,7 @@ ul {
 
 .page {
   width: 100%;
-  padding: 0 2.2rem .5rem 2.2rem;
+  padding: 1rem 2.2rem .5rem 2.2rem;
   font-size: 2rem;
   }
 }
@@ -63,7 +63,7 @@ ul {
   float: left; 
   width: 60%;
   font-size: 270%;
-  padding: 1rem .5em 1rem .5rem;
+  padding: .8rem .5em 1rem .5rem;
   }
   
 .col {float: right; padding: .5rem;}
@@ -93,7 +93,7 @@ ul {
 
 /*These are the stylings for devices */
 
-@media only screen and (max-width: 527px) {
+@media only screen and (max-width: 560px) {
 
 .title {
   float: left; 
@@ -177,18 +177,26 @@ font-family: 'Indie Flower', cursive;
 font-family: 'Sanchez', serif;
 font-family: 'Chewy', cursive; */
 
+/*This is the styling for the header */
+
 .title {
   font-family: 'Permanent Marker';
+  text-indent: 1rem;
   color: white;
   background-color: rgb(19, 47, 91);
   box-shadow: .2rem .2rem .2rem .2rem rgba(19, 47, 91,1);
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
+/* This is the styling for the menu bar */
+
 .menu {
   font-family: 'Indie Flower';
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 li a {
@@ -204,6 +212,8 @@ li {
   padding: .2rem;
 }
 
+/* This is the styling for the form */
+
 form {
   font-family: 'Indie Flower';
 }
@@ -211,6 +221,8 @@ form {
 select {font-family: 'Indie Flower';}
 
 input[type=submit] {font-family: 'Indie Flower';}
+
+/* This is the styling for the items on the page */
 
 h2 {
   font-family: 'Chewy';
