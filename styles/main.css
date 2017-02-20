@@ -92,7 +92,7 @@ ul {
 .page {
   width: 100%;
   padding: .8rem 2.2rem .5rem 2.2rem;
-  font-size: 2rem;
+  font-size: 4rem;
   }
   
 .item-container {width: 100%;}
@@ -138,7 +138,7 @@ ul {
 .page {
   width: 100%;
   padding: .5rem 2.2rem .5rem 2.2rem;
-  font-size: 2rem;
+  font-size: 4rem;
   }
 .item-container {width: 100%;}
 
@@ -274,4 +274,11 @@ p {font-family: 'Sanchez'; font-size: 1.4rem;}
 
 .item img {
   width: 100%;
+}
+
+/*This is the styling of the footer */
+
+footer {
+  background-color: rgb(19, 47, 91);
+  box-shadow: .2rem .2rem .2rem .2rem rgba(19, 47, 91,1);
 }
