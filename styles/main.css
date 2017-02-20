@@ -53,7 +53,19 @@ ul {
   font-size: 2rem;
   }
 }
-.item-container {width: 100%;}
+.item-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.item {
+  width: 20%;
+  padding: 2rem;
+}
 
 /*These are the grid stylings for half-screen */
 
@@ -126,6 +138,9 @@ ul {
   font-size: 2rem;
   }
 .item-container {width: 100%;}
+
+.item {}
+
 }
 
 /*These are all the variable widths that will not change with any media screen... to be used for specific purposes*/
@@ -199,11 +214,14 @@ font-family: 'Chewy', cursive; */
   justify-content: center;
 }
 
-li a {
-  text-decoration: none;
-  background-color: rgb(186, 212, 255);
+ul {
+   background-color: rgb(186, 212, 255);
   box-shadow: .12rem .12rem .12rem .12rem rgba(186, 212, 255, 1);
   border-radius: 3%; 
+}
+
+li a {
+  text-decoration: none;
 }
 
 li {
@@ -229,6 +247,15 @@ h2 {
   color: rgb(19, 47, 91);
 }
 
-h3 {font-family: 'Sanchez';}
+h3 {font-family: 'Sanchez'; font-size: 2rem;}
 
-p {font-family: 'Sanchez';}
+p {font-family: 'Sanchez'; font-size: 1.4rem;}
+
+.item {
+  text-align: center;
+  display: inline-block;
+}
+
+.item img {
+  width: 100%;
+}
