@@ -28,13 +28,15 @@ div.row:after {
 .title {
   float: left; 
   width:70%;
-  font-size: 270%;
+  font-size: 400%;
   padding: 1rem .5em 1rem .5rem;
+  text-align: center;
 }
 
 .col {float: right; padding: .7rem;}
 
 .menu {width: 30%; font-size: 150%;}
+
 ul {
   display: flex;
   justify-content: space-between;
@@ -45,22 +47,14 @@ ul {
   display: flex;
   align-content: center;
   justify-content: center;
+  font-size: 150%;
 }
 
 .page {
   width: 100%;
   padding: 1rem 2.2rem .5rem 2.2rem;
-  font-size: 2rem;
+  font-size: 4rem;
   }
-}
-.item-container {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  align-content: space-between;
-}
 
 .item {
   width: 20%;
@@ -76,6 +70,7 @@ ul {
   width: 60%;
   font-size: 270%;
   padding: .8rem .5em 1rem .5rem;
+  text-align: left;
   }
   
 .col {float: right; padding: .5rem;}
@@ -91,6 +86,7 @@ ul {
   display: flex;
   align-content: center;
   justify-content: center;
+  font-size: 150%;
   }
   
 .page {
@@ -100,6 +96,11 @@ ul {
   }
   
 .item-container {width: 100%;}
+  
+.item {
+  width: 30%;
+  padding: 1rem;
+}
 
 }
 
@@ -110,13 +111,14 @@ ul {
 .title {
   float: left; 
   width: 80%;
-  font-size: 250%;
+  font-size: 300%;
   padding: 1rem .5em 1rem .5rem;
+  text-align: left;
   }
   
 .col {float: right; padding: .2rem;}
   
-.menu {width: 20%; font-size: 120%}
+.menu {width: 20%; font-size: 170%}
 ul {
   text-align: right;
   display: flex;
@@ -130,6 +132,7 @@ ul {
   display: flex;
   align-content: center;
   justify-content: flex-start;
+  font-size: 200%;
   }
   
 .page {
@@ -139,7 +142,10 @@ ul {
   }
 .item-container {width: 100%;}
 
-.item {}
+.item {
+  width: 1000%;
+  padding: 1rem;
+}
 
 }
 
@@ -236,9 +242,9 @@ form {
   font-family: 'Indie Flower';
 }
 
-select {font-family: 'Indie Flower';}
+select {font-family: 'Indie Flower'; font-size: 90%;}
 
-input[type=submit] {font-family: 'Indie Flower';}
+input[type=submit] {font-family: 'Indie Flower'; font-size: 100%;}
 
 /* This is the styling for the items on the page */
 
@@ -253,7 +259,17 @@ p {font-family: 'Sanchez'; font-size: 1.4rem;}
 
 .item {
   text-align: center;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
 }
 
 .item img {
