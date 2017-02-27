@@ -48,6 +48,7 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+<<<<<<< HEAD
 
 // This function does not work as an array, it keeps reading as undefined. Why is this?
 function print(name, description, price) {
@@ -63,3 +64,48 @@ function print(name, description, price) {
 }
               
 print(products.name, products.description, products.price);
+=======
+//TODO: Trigger on chage of cart contents
+function sumPrices(cartArray) {
+  // for loop through array, sum value of price attribute for each object
+  var total = 0;
+  
+  for(var i=0; i<cartArray.length; i++){
+    
+      if(cartArray[i].price){
+  //    console.log(cartArray[i].price);
+      total = total + cartArray[i].price;
+    }
+  }
+  
+  console.log(total); //print the total near the cart instead of console logging it
+}
+
+
+
+// This is the syntax for looping through arrays that we learned in class 1. We'll use it to loop through the products array.
+
+for(var i = 0; i<products.length; i++){
+  
+  // "i" here is a temporary variable that refers to the index of the object we're currently on while looping through the array.
+
+  // We reference the element of the array that we're on using brackets
+  // notation with the counter/i variable. That element is an object,
+  // so we can refer to it's attributes using dot notation.
+  
+  console.log(products[i].name);
+  console.log(products[i].description);
+  console.log(products[i].price);
+}
+
+// Begin function for the form
+
+function sortProduct(){ 
+ console.log(document.product.filter.value);
+  event.preventDefault();
+}
+
+
+
+
+>>>>>>> week5-solution
