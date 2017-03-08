@@ -49,7 +49,7 @@ var products = [
   }
 ]
 
-var cart = '';
+//These variables are pushing data to the html page by ID
 
 var revPlaidName = document.getElementById('rev-plaid-name');
 revPlaidName.innerHTML = products[0].name;
@@ -107,6 +107,41 @@ twillDesc.innerHTML = products[7].description;
 var twillPrice = document.getElementById('twill-price');
 twillPrice.innerHTML = '$'+products[7].price;
 
+//This is the empty cart
+
+var cart = [];
+
+//This is the function to push and pop items to the cart array
+
+function cartBasket () {
+  for(var i=0; i<products.length; i++) {
+    i = products[i].name;
+    var cartItem = cart[i];
+    if(cartItem!==i){
+      cart.push(i);
+    }else{
+      cart.pop[i];
+    }
+  }
+  console.log(cart);
+  console.log(cart.length);
+}
+
+//function sumPrices(cartArray) {
+//  // for loop through array, sum value of price attribute for each object
+//  var total = 0;
+//  
+//  for(var i=0; i<cartArray.length; i++){
+//    
+//      if(cartArray[i].price){
+//  //    console.log(cartArray[i].price);
+//      total = total + cartArray[i].price;
+//    }
+//  }
+//  
+//  console.log(total); //print the total near the cart instead of console logging it
+//}
+
 //<<<<<<< HEAD
 
 // This function does not work as an array, it keeps reading as undefined. Why is this?
@@ -161,20 +196,4 @@ function sortProduct(){
     }
 
   event.preventDefault();
-}
-
-
-function sumPrices(cartArray) {
-  // for loop through array, sum value of price attribute for each object
-  var total = 0;
-  
-  for(var i=0; i<cartArray.length; i++){
-    
-      if(cartArray[i].price){
-  //    console.log(cartArray[i].price);
-      total = total + cartArray[i].price;
-    }
-  }
-  
-  console.log(total); //print the total near the cart instead of console logging it
 }
