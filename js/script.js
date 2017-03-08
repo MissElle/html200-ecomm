@@ -51,6 +51,62 @@ var products = [
 
 var cart = '';
 
+var revPlaidName = document.getElementById('rev-plaid-name');
+revPlaidName.innerHTML = products[0].name;
+var revPlaidDesc = document.getElementById('rev-plaid-desc');
+revPlaidDesc.innerHTML = products[0].description;
+var revPlaidPrice = document.getElementById('rev-plaid-price');
+revPlaidPrice.innerHTML = '$'+products[0].price;
+
+var woolName = document.getElementById('wool-name');
+woolName.innerHTML = products[1].name;
+var woolDesc = document.getElementById('wool-desc');
+woolDesc.innerHTML = products[1].description;
+var woolPrice = document.getElementById('wool-price');
+woolPrice.innerHTML = '$'+products[1].price;
+
+var northName = document.getElementById('north-name');
+northName.innerHTML = products[2].name;
+var northDesc = document.getElementById('north-desc');
+northDesc.innerHTML = products[2].description;
+var northPrice = document.getElementById('north-price');
+northPrice.innerHTML = '$'+products[2].price;
+
+var ombreName = document.getElementById('ombre-name');
+ombreName.innerHTML = products[3].name;
+var ombreDesc = document.getElementById('ombre-desc');
+ombreDesc.innerHTML = products[3].description;
+var ombrePrice = document.getElementById('ombre-price');
+ombrePrice.innerHTML = '$'+products[3].price;
+
+var frinPlaidName = document.getElementById('frin-plaid-name');
+frinPlaidName.innerHTML = products[4].name;
+var frinPlaidDesc = document.getElementById('frin-plaid-desc');
+frinPlaidDesc.innerHTML = products[4].description;
+var frinPlaidPrice = document.getElementById('frin-plaid-price');
+frinPlaidPrice.innerHTML = '$'+products[4].price;
+
+var multiName = document.getElementById('multi-name');
+multiName.innerHTML = products[5].name;
+var multiDesc = document.getElementById('multi-desc');
+multiDesc.innerHTML = products[5].description;
+var multiPrice = document.getElementById('multi-price');
+multiPrice.innerHTML = '$'+products[5].price;
+
+var etroName = document.getElementById('etro-name');
+etroName.innerHTML = products[6].name;
+var etroDesc = document.getElementById('etro-desc');
+etroDesc.innerHTML = products[6].description;
+var etroPrice = document.getElementById('etro-price');
+etroPrice.innerHTML = '$'+products[6].price;
+
+var twillName = document.getElementById('twill-name');
+twillName.innerHTML = products[7].name;
+var twillDesc = document.getElementById('twill-desc');
+twillDesc.innerHTML = products[7].description;
+var twillPrice = document.getElementById('twill-price');
+twillPrice.innerHTML = '$'+products[7].price;
+
 //<<<<<<< HEAD
 
 // This function does not work as an array, it keeps reading as undefined. Why is this?
