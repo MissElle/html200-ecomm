@@ -74,6 +74,7 @@ button {
   height: 1.7vw;
   font-weight: bold;
   font-size: 1vw;
+  margin: 0 0 0 9em;
 }
 
 .item {
@@ -128,6 +129,7 @@ button {
   height: 3.5vw;
   font-weight: bold;
   font-size: 2vw;
+  margin: 0 0 0 7.1em;
 }  
 
 .item-container {width: 100%;}
@@ -188,9 +190,10 @@ ul {
   }
   
 button {
-  width: 1.4em;
-  height: 1.4em;
-  font-size: .7em;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  margin: 0 0 0 8em;
 }
   
 .item-container {width: 100%;}
@@ -353,9 +356,7 @@ p {font-family: 'Sanchez'; color: rgb(19, 47, 91);}
 }
 
 button {
-position: relative;
-right: 1em;
-bottom: .5em;
+position: absolute;
 background-color: rgb(19, 47, 91);
 color: white;
 border-radius: 50%;
