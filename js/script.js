@@ -48,24 +48,66 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-<<<<<<< HEAD
+
+var cart = '';
+
+//<<<<<<< HEAD
 
 // This function does not work as an array, it keeps reading as undefined. Why is this?
-function print(name, description, price) {
-  if (name == "") {
-    console.log(ERROR-name);
-    } else if (description == "") {
-      console.log(ERROR-descrition);
-    } else if (price < 0) {
-      console.log(ERROR-price);
-    } else {
-      console.log(name + ":" + description + "This product is $" + price + ".")
-    }
-}
-              
-print(products.name, products.description, products.price);
-=======
+//function print(name, description, price) {
+//  if (name == "") {
+//    console.log(ERROR-name);
+//    } else if (description == "") {
+//      console.log(ERROR-descrition);
+//    } else if (price < 0) {
+//      console.log(ERROR-price);
+//    } else {
+//      console.log(name + ":" + description + "This product is $" + price + ".")
+//    }
+//}
+//              
+//print(products.name, products.description, products.price);
+//=======
 //TODO: Trigger on chage of cart contents
+
+
+// This is the syntax for looping through arrays that we learned in class 1. We'll use it to loop through the products array.
+
+//for(var i = 0; i<products.length; i++){
+  
+  // "i" here is a temporary variable that refers to the index of the object we're currently on while looping through the array.
+
+  // We reference the element of the array that we're on using brackets
+  // notation with the counter/i variable. That element is an object,
+  // so we can refer to it's attributes using dot notation.
+  
+//  console.log(products[i].name);
+//  console.log(products[i].description);
+//  console.log(products[i].price);
+//}
+
+// Begin function for the form
+
+function sortProduct(){ 
+//  THIS AREA WORKING
+  function compareName(a,b) {
+    
+    if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;   
+    if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+  return 0;
+  
+  console.log(products.sort(compareName));
+    }
+
+// THIS AREA WORKS, JUST NEED A WAY TO CALL SELECT VALUE, reading as undefined
+    function comparePrice(a,b){
+      return a.price - b.price; console.log(products.sort(comparePrice));
+    }
+
+  event.preventDefault();
+}
+
+
 function sumPrices(cartArray) {
   // for loop through array, sum value of price attribute for each object
   var total = 0;
@@ -80,32 +122,3 @@ function sumPrices(cartArray) {
   
   console.log(total); //print the total near the cart instead of console logging it
 }
-
-
-
-// This is the syntax for looping through arrays that we learned in class 1. We'll use it to loop through the products array.
-
-for(var i = 0; i<products.length; i++){
-  
-  // "i" here is a temporary variable that refers to the index of the object we're currently on while looping through the array.
-
-  // We reference the element of the array that we're on using brackets
-  // notation with the counter/i variable. That element is an object,
-  // so we can refer to it's attributes using dot notation.
-  
-  console.log(products[i].name);
-  console.log(products[i].description);
-  console.log(products[i].price);
-}
-
-// Begin function for the form
-
-function sortProduct(){ 
- console.log(document.product.filter.value);
-  event.preventDefault();
-}
-
-
-
-
->>>>>>> week5-solution

@@ -65,9 +65,16 @@ ul {
 .page {
   width: 100%;
   padding: .1em .2em .2em 2em;
-  font-size: 4em;
+  font-size: 2em;
   display: flex;
   }
+
+button {
+  width: 1.7vw;
+  height: 1.7vw;
+  font-weight: bold;
+  font-size: 1vw;
+}
 
 .item {
   width: 20%;
@@ -113,9 +120,16 @@ ul {
 .page {
   width: 100%;
   padding: .1em .2em .2em .7em;
-  font-size: 8vw;
+  font-size: 4vw;
   }
   
+button {
+  width: 3.5vw;
+  height: 3.5vw;
+  font-weight: bold;
+  font-size: 2vw;
+}  
+
 .item-container {width: 100%;}
   
 .item {
@@ -172,6 +186,13 @@ ul {
   padding: .5rem 2.2rem .5rem 2.2rem;
   font-size: 2.8em;
   }
+  
+button {
+  width: 1.4em;
+  height: 1.4em;
+  font-size: .7em;
+}
+  
 .item-container {width: 100%;}
 
 .item {
@@ -288,7 +309,7 @@ h2 {
 
 h3 {font-family: 'Sanchez'; font-size: 2em; color: rgb(19, 47, 91);}
 
-p {font-family: 'Sanchez'; font-size: 1.4rem; color: rgb(19, 47, 91);}
+p {font-family: 'Sanchez'; color: rgb(19, 47, 91);}
 
 .menu a {
   color: rgb(19, 47, 91);
@@ -329,6 +350,15 @@ p {font-family: 'Sanchez'; font-size: 1.4rem; color: rgb(19, 47, 91);}
   position: absolute;
   padding: .5em 1em 1em 0;
   width: 100%;
+}
+
+button {
+position: relative;
+right: 1em;
+bottom: .5em;
+background-color: rgb(19, 47, 91);
+color: white;
+border-radius: 50%;
 }
 
 /*This is the styling of the footer */
