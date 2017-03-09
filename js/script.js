@@ -108,7 +108,7 @@ var twillPrice = document.getElementById('twill-price');
 twillPrice.innerHTML = '$'+products[7].price;
 
 //This is the empty cart
-
+git 
 var cart = [];
 
 //This is the function to push and pop items to the cart array
