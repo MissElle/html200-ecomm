@@ -108,7 +108,7 @@ var twillPrice = document.getElementById('twill-price');
 twillPrice.innerHTML = '$'+products[7].price;
 
 //This is the empty cart
-git 
+
 var cart = [];
 
 //This is the function to push and pop items to the cart array
@@ -116,22 +116,15 @@ var cart = [];
 function cartBasket() {
   var i = document.getElementById('button').value;
   var item = products[i].name;
-    for(j = 0; j<cart.length; j++){
-    var index = cart.indexOf(j);
-  
+  var index = cart.findIndex(function(el){
+    return el.name == "x"
+  });
     if(index >= 0){
-      cart.splice(index,1);
+      cart.slice(item,1);
     } else {
       cart.push(item);
     }
-  }
-//  for(var i=0; i<products.length; i++) {
-//    var i = products[i].name;
-//    if(i.substr() !== cart[i]){
-//      cart.push(x);
-//    } else{
-//      cart.slice(x,1);
-//      }
+
   console.log(cart);
   console.log(cart.length);
 }
