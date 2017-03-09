@@ -113,11 +113,10 @@ var cart = [];
 
 //This is the function to push and pop items to the cart array
 
-function cartBasket() {
-  var i = document.getElementById('button').value;
-  var item = products[i].name;
+function cartBasket(value) {
+  var item = products[value].name;
   var index = cart.findIndex(function(el){
-    return el.name == "x"
+    return el.name == item
   });
     if(index >= 0){
       cart.slice(item,1);
