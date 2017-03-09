@@ -120,7 +120,7 @@ function cartBasket(value) {
     if(i <= 0){
       cart.push(item);
     } else {
-      cart.splice(i,1);
+      cart.splice(item,1);
     }
   
   console.log(cart);
