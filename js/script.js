@@ -115,11 +115,11 @@ var cart = [];
 
 function cartBasket(value) {
   var item = products[value].name;
-  var index = cart.findIndex(function(el){
-    return el.name == item
-  });
-    if(index >= 0){
-      cart.slice(item,1);
+  var i = cart.indexOf(function(el){
+    return el.item.toLowerCase() == value});
+  
+    if(i >= 0){
+      cart.pop(item);
     } else {
       cart.push(item);
     }
