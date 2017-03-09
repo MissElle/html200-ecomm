@@ -115,15 +115,14 @@ var cart = [];
 
 function cartBasket(value) {
   var item = products[value].name;
-  var i = cart.indexOf(function(el){
-    return el.item.toLowerCase() == value});
-  
-    if(i >= 0){
-      cart.pop(item);
-    } else {
-      cart.push(item);
-    }
+  var i = cart.indexOf(item);
 
+    if(i <= 0){
+      cart.push(item);
+    } else {
+      cart.splice(i,1);
+    }
+  
   console.log(cart);
   console.log(cart.length);
 }
