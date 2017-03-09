@@ -204,6 +204,15 @@ button {
 }
 
 }
+/*for super small devices */
+@media only screen and (max-width: 26em) {
+  button {
+    width: 1em;
+    height: 1em;
+    font-size: 1em;
+    margin: 0 4em 0 0;
+  }
+}
 
 /*These are all the variable widths that will not change with any media screen... to be used for specific purposes*/
 

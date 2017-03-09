@@ -178,21 +178,48 @@ function cartBasket () {
 
 // Begin function for the form
 
-function sortProduct(){ 
-//  THIS AREA WORKING
-  function compareName(a,b) {
+// This function compares names
+function compareName(a,b) {
     
     if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;   
     if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
   return 0;
-  
-  console.log(products.sort(compareName));
-    }
+}
 
-// THIS AREA WORKS, JUST NEED A WAY TO CALL SELECT VALUE, reading as undefined
-    function comparePrice(a,b){
+//this function compares prices
+function comparePrice(a,b){
       return a.price - b.price; console.log(products.sort(comparePrice));
     }
 
+//This function is to call sort form values
+function sortProduct(){ 
+//    var sortPrice = selectObject.price;
+    var compare = document.product.filter.value;
+    
+//    if(compare == 'price') {
+//      console.log(products.sort(comparePrice));
+//    } else if(compare == 'name') {
+//      console.log(products.sort(compareName));
+//    }else {
+//      console.log('Nothing selected!');
+//    }
+
+// THE ABOVE IF/ELSE statment works as well, but I prefer to use switch statements for they are easier to read.
+  
+    switch(compare){
+      case 'price':
+        console.log(products.sort(compareName));
+        break;
+        
+      case 'name':
+        console.log(products.sort(comparePrice));
+        break;
+        
+      default:
+        console.log('ERROR: Code is broken somewhere');
+        break;
+        
+    }
+  
   event.preventDefault();
 }
