@@ -115,13 +115,12 @@ var cart = [];
 
 function cartBasket () {
   for(var i=0; i<products.length; i++) {
-    i = products[i].name;
-    var cartItem = cart[i];
-    if(cartItem!==i){
-      cart.push(i);
-    }else{
-      cart.pop[i];
-    }
+    var j = products[i].name;
+    if(j.substr() !== cart[i]){
+      cart.push(j);
+    } else{
+      cart.pop(j);
+      }
   }
   console.log(cart);
   console.log(cart.length);
