@@ -116,8 +116,8 @@ var cart = [];
 function cartBasket(value) {
   var item = products[value].name;
   var i = cart.indexOf(item);
-
-    if(i <= 0){
+    console.log(i);
+    if(i<0){
       cart.push(item);
     } else {
       cart.splice(item,1);
