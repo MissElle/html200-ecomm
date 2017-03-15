@@ -122,7 +122,9 @@ function cartBasket(value) {
     } else {
       cart.splice(item,1);
     }
+  var itemCount = document.getElementById('cart-count');
   
+  itemCount.innerHTML = '<p class="cart-count-size">(' + cart.length + ')</p> <i class="fa fa-shopping-cart" aria-hidden="true"></i>';
   console.log(cart);
   console.log(cart.length);
 }

@@ -47,7 +47,7 @@ p{padding: .3em 0 0 0;}
 
 .col {float: right; padding: .7em;}
 
-.menu {width: 30%; font-size: 3vw; padding: .3em .4em 0 .4em;}
+.menu {width: 30%; font-size: 2.5vw; padding: .3em .4em 0 .4em;}
 
 ul {
   display: flex;
@@ -101,8 +101,8 @@ button {
 .col {float: right; padding: .5rem;}
   
 .menu {
-  width: 30%; 
-  font-size: 3vw;;
+  width: 30%;
+  font-size: 1.42em;
   }
   
 ul {
@@ -139,6 +139,17 @@ button {
   padding: 1em;
 }
   
+}
+
+/* This is for the menu configuration as the model shrinks*/
+
+@media only screen and (max-width: 51em) {
+  ul {
+  text-align: right;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+}
 }
 
 /*These are the stylings for devices */
@@ -207,10 +218,10 @@ button {
 /*for super small devices */
 @media only screen and (max-width: 26em) {
   button {
-    width: 1em;
-    height: 1em;
+    width: 1.6em;
+    height: 1.6em;
     font-size: 1em;
-    margin: 0 4em 0 0;
+    margin: 0 0 0 9.3em;
   }
 }
 
@@ -281,9 +292,6 @@ font-family: 'Chewy', cursive; */
 
 .menu {
   font-family: 'Indie Flower';
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 ul {
@@ -300,6 +308,15 @@ li {
   font-weight: bold;
   color: rgb(19, 47, 91);
   padding: .1em;
+}
+
+.cart-info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-count-size {
+  font-size: .75em;
 }
 
 /* This is the styling for the form */
@@ -365,10 +382,10 @@ p {font-family: 'Sanchez'; color: rgb(19, 47, 91);}
 }
 
 button {
-position: absolute;
-background-color: rgb(19, 47, 91);
-color: white;
-border-radius: 50%;
+  position: absolute;
+  background-color: rgb(19, 47, 91);
+  color: white;
+  border-radius: 50%;
 }
 
 /*This is the styling of the footer */
